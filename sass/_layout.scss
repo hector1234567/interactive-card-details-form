@@ -1,0 +1,11 @@
+body {
+    background-color: var(--color-white);
+    height: 100vh;
+
+    position: relative;
+
+    & > .background__picture img {
+        position: absolute;
+        height: 100%;
+    }
+}

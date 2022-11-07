@@ -5,3 +5,11 @@
   --color-white: hsl(0, 0%, 100%);
   --color-light-grayish-violet: hsl(279, 6%, 55%);
   --color-very-dark-violet: hsl(278, 68%, 11%); }
+
+body {
+  background-color: var(--color-white);
+  height: 100vh;
+  position: relative; }
+  body > .background__picture img {
+    position: absolute;
+    height: 100%; }
