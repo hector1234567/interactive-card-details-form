@@ -8,10 +8,6 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <picture class="background__picture">
@@ -20,7 +16,7 @@
   </picture>
   <main>
     <div class="cards-container">
-      <div class="card__front">
+      <div class="card card__front">
         <img src="images/card-logo.svg" class="card__front--logo" alt="Logo">
         <div class="card__front--number">
           <span>0000</span>
@@ -31,7 +27,9 @@
         <div class="card__front--user-name">Jane Appleseed</div>
         <div class="card__front--exp-date">00/00</div>
       </div>
-      <div class="card__back"></div>
+      <div class="card card__back">
+        <div class="card__back--cvc">000</div>
+      </div>
     </div>
     <div class="form-container">
       <form action="#" method="post">

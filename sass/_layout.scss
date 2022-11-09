@@ -1,11 +1,27 @@
 body {
     background-color: var(--color-white);
     height: 100vh;
+    font-size: 1.8rem;
+    font-family: SpaceGrotesk, sans-serif;
+    font-weight: 500;
 
     position: relative;
 
     & > .background__picture img {
         position: absolute;
         height: 100%;
+        width: 33.6vw;
+        object-fit: cover;
+        z-index: -1;
     }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

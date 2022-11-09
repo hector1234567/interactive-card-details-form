@@ -6,10 +6,96 @@
   --color-light-grayish-violet: hsl(279, 6%, 55%);
   --color-very-dark-violet: hsl(278, 68%, 11%); }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("/fonts/SpaceGrotesk-Medium.ttf"); }
+
 body {
   background-color: var(--color-white);
   height: 100vh;
+  font-size: 1.8rem;
+  font-family: SpaceGrotesk, sans-serif;
+  font-weight: 500;
   position: relative; }
   body > .background__picture img {
     position: absolute;
-    height: 100%; }
+    height: 100%;
+    width: 33.6vw;
+    object-fit: cover;
+    z-index: -1; }
+
+main {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  left: 50vw;
+  transform: translateX(-50%); }
+
+.attribution a {
+  color: #3e52a3; }
+
+.cards-container {
+  width: 62rem;
+  height: 60.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.card {
+  height: 28rem;
+  width: 51.2rem;
+  padding: 3.8rem;
+  color: var(--color-white);
+  border-radius: 1.1rem;
+  transition: all .2s ease-out; }
+  .card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.2); }
+  .card__front {
+    align-self: flex-start;
+    background: url("./images/bg-card-front.png");
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px; }
+    .card__front--logo {
+      grid-column: 1 / 3; }
+    .card__front--number {
+      grid-column: 1 / 3;
+      font-size: 3.3rem;
+      letter-spacing: .2rem; }
+      .card__front--number span:not(:last-child) {
+        margin-right: 1rem; }
+    .card__front--user-name {
+      text-transform: uppercase; }
+    .card__front--exp-date {
+      justify-self: end; }
+  .card__back {
+    align-self: flex-end;
+    background: url("./images/bg-card-back.png");
+    background-size: 100%;
+    position: relative; }
+    .card__back--cvc {
+      position: absolute;
+      top: 12.6rem;
+      right: 7rem; }
