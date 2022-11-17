@@ -1,3 +1,7 @@
 .hidden {
     display: none !important;
 }
+
+.border-red {
+    border: 2px solid var(--color-red) !important;
+}
