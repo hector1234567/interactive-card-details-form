@@ -66,6 +66,10 @@
 
         &--logo {
             grid-column: 1 / 3;
+
+            @media only screen and (max-width: 640px) {
+                height: 3rem;
+            }
         }
 
         &--number {
