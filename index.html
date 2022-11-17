@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <script type="module" src="js/validator.js"></script>
   <script type="module" src="js/main.js"></script>
-  <!-- <script defer src="scripts.js"></script> -->
 </head>
 <body>
   <picture class="background__picture">
@@ -35,7 +34,7 @@
       </div>
     </div>
     <div class="form-container">
-      <form id="card-form" action="#" method="post">
+      <form id="card-form">
         <div class="field-container field-container--user-name">
           <label for="user-name">Cardholder name</label>
           <input type="text" name="user-name" id="user-name" placeholder="e.g. Jane Appleseed">
@@ -46,7 +45,7 @@
         </div>
         <div class="field-container field-container--exp-date">
           <label for="exp-date--month">Exp. date (mm/yy)</label>
-          <div>
+          <div class="field-container__inputs">
             <input type="text" name="exp-date-month" id="exp-date--month" placeholder="MM">
             <input type="text" name="exp-date-year" id="exp-date--year" placeholder="YY">
           </div>
@@ -55,10 +54,16 @@
           <label for="cvc">CVC</label>
           <input type="text" name="cvc" id="cvc" placeholder="e.g. 123">
         </div>
-        <div class="field-container field-container--submit">
-          <input type="submit" value="Confirm">
+        <div class="field-container__submit">
+          <input class="btn" type="submit" value="Confirm">
         </div>
       </form>
+      <div class="thank-you hidden">
+        <img src="images/icon-complete.svg" alt="Complete">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button class="btn btn-continue">Continue</button>
+      </div>
     </div>
   </main>
 <!-- 

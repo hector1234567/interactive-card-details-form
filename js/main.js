@@ -20,6 +20,8 @@ const cardFrontUserName = document.querySelector('.card__front--user-name');
 const cardExpDate = document.querySelector('.card__front--exp-date');
 const cardCvc = document.querySelector('.card__back--cvc');
 
+const thankYou = document.querySelector('.thank-you');
+
 const validator = new Validator(form);
 
 const renderState = function(section) {
@@ -58,6 +60,7 @@ userName.addEventListener('input', function(ev) {
         this.value = state.userName;
         return;
     }
+    validator.clearErrorMessage('user-name');
     state.userName = this.value;
     renderState('user-name');
 });
@@ -185,5 +188,10 @@ form.addEventListener('submit', function(ev) {
 
     if(!valid) return;
 
-    //this.style.display = 'none';
+    this.classList.add('hidden');
+    thankYou.classList.remove('hidden');
+})
+
+document.querySelector('.btn-continue').addEventListener('click', function() {
+    location.reload();
 })
