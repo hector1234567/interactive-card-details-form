@@ -176,6 +176,9 @@ form.addEventListener('submit', function(ev) {
     }else if(+state.expDateMonth === 0) {
         validator.showErrorMessage('Wrong month number!', 'exp-date');
         valid = false;
+    } else if(validator.dateExpired(state.expDateMonth, state.expDateYear)) {
+        validator.showErrorMessage('Date has expired', 'exp-date');
+        valid = false;
     }
 
     if(!state.cvc) {
