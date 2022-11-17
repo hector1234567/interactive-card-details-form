@@ -6,6 +6,11 @@ body {
     font-weight: 500;
 
     position: relative;
+    
+    @media only screen and (max-width: 640px) {
+        position: unset;
+        height: auto;
+    }
 
     & > .background__picture img {
         position: absolute;
