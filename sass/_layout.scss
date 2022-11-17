@@ -13,6 +13,11 @@ body {
         width: 33.6vw;
         object-fit: cover;
         z-index: -1;
+
+        @media only screen and (max-width: 640px) {
+            height: 25rem;
+            width: 100vw;
+        }
     }
 }
 
@@ -22,9 +27,16 @@ main {
     align-items: center;
     width: 115rem;
     max-width: 100vw;
+    padding: 0 2rem;
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        position: unset;
+        transform: none;
+    }
 }

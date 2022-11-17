@@ -1,9 +1,14 @@
 .form-container {
     width: 38rem;
 
+    @media only screen and (max-width: 640px) {
+        margin-top: 34rem;
+    }
+
     form {
         display: grid;
         grid-template-columns: 50% 50%;
+        width: 35rem;
         // grid-template-rows: 1fr auto auto;
     
         grid-row-gap: 3rem;
