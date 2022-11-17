@@ -40,7 +40,7 @@
 
         input {
             padding: 1.4rem;
-            border: 1px solid var(--color-light-grayish-violet-transparent);
+            border: 2px solid var(--color-light-grayish-violet-transparent);
             border-radius: .5rem;
             font-family: inherit;
             font-weight: inherit;
@@ -50,10 +50,10 @@
 
             &:focus {
                 outline: none;
-                border-top: 1px solid var(--color-border-active-from);
-                border-left: 1px solid var(--color-border-active-from);
-                border-right: 1px solid var(--color-border-active-to);
-                border-bottom: 1px solid var(--color-border-active-to);
+                border-top: 2px solid var(--color-border-active-from);
+                border-left: 2px solid var(--color-border-active-from);
+                border-right: 2px solid var(--color-border-active-to);
+                border-bottom: 2px solid var(--color-border-active-to);
             }
         }
 
@@ -70,6 +70,5 @@
     .error-message {
         color: var(--color-red);
         font-size: 1.2rem;
-        display: none;
     }
 }

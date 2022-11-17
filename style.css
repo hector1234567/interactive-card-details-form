@@ -132,7 +132,7 @@ main {
       letter-spacing: .1rem; }
     .form-container .field-container input {
       padding: 1.4rem;
-      border: 1px solid var(--color-light-grayish-violet-transparent);
+      border: 2px solid var(--color-light-grayish-violet-transparent);
       border-radius: .5rem;
       font-family: inherit;
       font-weight: inherit;
@@ -141,10 +141,10 @@ main {
       width: 100%; }
       .form-container .field-container input:focus {
         outline: none;
-        border-top: 1px solid var(--color-border-active-from);
-        border-left: 1px solid var(--color-border-active-from);
-        border-right: 1px solid var(--color-border-active-to);
-        border-bottom: 1px solid var(--color-border-active-to); }
+        border-top: 2px solid var(--color-border-active-from);
+        border-left: 2px solid var(--color-border-active-from);
+        border-right: 2px solid var(--color-border-active-to);
+        border-bottom: 2px solid var(--color-border-active-to); }
     .form-container .field-container--submit input {
       height: 5.3rem;
       background-color: var(--color-very-dark-violet);
@@ -154,5 +154,4 @@ main {
       border: none; }
   .form-container .error-message {
     color: var(--color-red);
-    font-size: 1.2rem;
-    display: none; }
+    font-size: 1.2rem; }
