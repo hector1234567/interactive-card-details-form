@@ -1,8 +1,7 @@
 # Frontend Mentor - Interactive card details form
 
-![Design preview for the Interactive card details form coding challenge](./design/Interactive%20card%20details%20form%20DESKTOP.png)
-![Design preview for the Interactive card details form coding challenge](./design/Frontend%20Mentor%20Interactive%20card%20details%20form%20MOBILE.png)
-
+<img src="./design/Interactive%20card%20details%20form%20DESKTOP.png" alt="drawing" width="800"/>
+<img src="./design/Frontend%20Mentor%20Interactive%20card%20details%20form%20MOBILE.png" alt="drawing" width="400"/>
 
 ## The challenge
 
